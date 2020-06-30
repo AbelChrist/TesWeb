@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Pendukung Informasi Web -->
+        <meta name="author" content="Abel Christian" charset="UTF-8">
+        <meta name="description" content="CSS,Text-Shadow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="source/icon/Kano-300x300.jpg">
+        <title>Property letter-spacing dan word-spacing</title>
+    </head>
+    <body>
+        <!-- Kontainer Utama Web -->
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <h1>css text</h1>
+            </header>
+            <!-- Navigasi -->
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <!-- Banner Gambar Artikel -->
+            <div class="banner">
+                <img src="source/bg/Kano_BG.png" alt="Kano" />
+                <p>Kano (Gambar tidak berkaitan dengan isi artikel).</p>
+            </div>
+            <!-- Artikel Utama -->
+            <article>
+                <!-- Judul Artikel -->
+                <section class="judul">
+                    <h2>Property letter-spacing dan word-spacing</h2>
+                    <p>Dibuat oleh <a href="#about">Abel Christian</a> pada 17 Juni 2020</p>
+                </section>
+                <!-- Isi Artikel -->
+                <section class="isi">
+                    <h3>Property letter-spacing</h3>
+                    <p>Property ini digunakan untuk membuat jarak antara huruf dengan huruf lainnya</p>
+                    <h3>Syntax:</h3>
+                    <!-- Syntax 1 -->
+                    <pre>
+                        <code class="syntax">
+                        <span class="selector">p</span>{
+                            <span class="property">letter-spacing:</span><span class="value"> 10px</span>;
+                        }
+                        </code>
+                    </pre>
+                    <h3>Output:</h3>
+                    <div class="output1 whitebox">
+                        <p>Letter Spacing</p>
+                    </div>
+                    <p>Untuk nilai positif, hurufnya akan merenggang. Dan jika nilainya negatif maka hurufnya akan merapat.</p>
+                    <h3>Syntax:</h3>
+                    <!-- Syntax 2 -->
+                    <pre>
+                        <code class="syntax">
+                        <span class="selector">p</span>{
+                            <span class="property">letter-spacing:</span><span class="value"> -2px</span>;
+                        }
+                        </code>
+                    </pre>
+                    <h3>Output:</h3>
+                    <div class="output2 whitebox">
+                        <p>Letter Spacing</p>
+                    </div>
+                    <p>Perlu diperhatikan penggunaan nilai negatif dapat merapatkan huruf, berkemungkinan huruf/kalimat tidak dapat dibaca.</p>
+                    <h3>Penjelasan</h3>
+                    <p>Dirasa sudah jelas, letter-spacing ini digunakan untuk merenggangkan (jarak) antar huruf dan nilainya bisa positif atau negatif jika ingin kembali normal maka bisa diisi dengan nilai <i>normal</i>.</p>
+                    <h3>Property word-spacing</h3>
+                    <p>Property ini dugnakan untuk membuat jarak antar kata</p>
+                    <!-- Syntax 3 -->
+                    <h3>Syntax:</h3>
+                    <pre>
+                        <code class="syntax">
+                        <span class="selector">p</span>{
+                            <span class="property">word-spacing:</span><span class="value"> 20px</span>;
+                        }
+                        </code>
+                    </pre>
+                    <h3>Output:</h3>
+                    <div class="output3 whitebox">
+                        <p>Word Spacing</p>
+                    </div>
+                    <p>Nilainya bisa juga diisi dengan negatif.</p>
+                    <!-- Syntax 4 -->
+                    <h3>Syntax:</h3>
+                    <pre>
+                        <code class="syntax">
+                        <span class="selector">p</span>{
+                            <span class="property">word-spacing:</span><span class="value"> -10px</span>;
+                        }
+                        </code>
+                    </pre>
+                    <h3>Output:</h3>
+                    <div class="output4 whitebox">
+                        <p>Word Spacing</p>
+                    </div>
+                    <h3>Penjelasan</h3>
+                    <p>Kurang lebih sama seperti property letter-spacing untuk nilainya namun perbedaanya property word-spacing ini adalah untuk membuat jarak antar kata.</p>
+                    <p>Ya mungkin itu saja yang bisa ditulis tentang property letter-spacing dan word-spacing pada CSS, ini hanya sekadar dokumentasi pembelajaran mandiri kurang lebih Terima Kasih.</p>
+                    <div class="Kano">
+                    <img height="200px" src="../Sticker/Kano/11235730@2x.png" alt="">
+                    </div>
+                    <!-- Bar Navigasi -->
+                    <div class="navigasi">
+                        <a class="prev" href="#">← Kembali ke Text Shadow</a>
+                        <a class="next" href="#">→ Maju ke Background Color</a>
+                    </div>
+                </section>
+            </article>
+        </div>
+        <!-- Biografi -->
+        <div id="about" class="biografi">
+            <h1>About</h1>
+            <div class="avatar">
+            <img src="source/bg/Kano.png" alt="">
+            </div>
+            <h2>Abel Christian</h2>
+            <p>So, Hi I am Abel Christian and my nickname is ACEZ (Nickname game lol). In entire of my activity i always use ACEZ as my name.</p>
+            <p>Hello I am ACEZ. Simply from now i just like to learn everything new especially in update of technologies or as said I am Technology Enthusiast want to be deeper about programming. I am also love humans but not the people, i love the potential of humans, sometime i hate when human just waste their potential and not utilize resources from god. Don't take seriously xD.</p>
+            <p>And the last i am fan of <a href="https://www.youtube.com/user/bambinoonico" target="_blank">Kano</a> (<span lang="jp">鹿乃)</span> his voice like angel. Sometime her voice motivated me to be better and make me feel a life again.</p>
+            <p>Well that’s all, see you later.</p>
+        </div>
+        <!-- Copyright --> 
+    <footer>
+            &copy; copyright 2020 abel christian. all rights reserved.
+    </footer>
+</body>
+</html>
