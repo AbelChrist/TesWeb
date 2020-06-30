@@ -1,0 +1,319 @@
+    /*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+    /*Style*/
+
+    /*Body*/
+body{
+    background: #EEE url("source/bg/doodles.png");
+    font-family: Calibri;
+}
+
+
+    /*Box Kontainer*/
+div.container{
+    width: 70%;
+    margin: 0 auto 20px;
+    background: #fefefe;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+article{
+    text-align: justify;
+}
+
+
+    /*Header Web*/
+.container header{
+    margin: 5px;
+}
+
+.container header h1{
+    font-size: 24pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+    /*Navigasi Atas*/
+nav{
+  background-color: #333;
+  overflow: hidden;
+}
+    
+nav a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  /*Memberikan Style ke dalam bar navigasi*/
+}
+
+nav a:hover{
+  background-color: #ddd;
+  color: black;
+  /*Mengganti warna saat hover ke link*/
+}
+
+nav a.active{
+  background-color: skyblue;
+  color: white;
+  /*Memberikan warna tetap pada navigasi Home*/
+}
+
+
+    /*Banner Gambar*/
+div.banner img{
+    margin: 0 0 3px 0;
+    width: 100%;
+    height: 420px;
+}
+
+div.banner p{
+    text-align: center;
+    color: #999;
+}
+
+
+    /*Judul Artikel*/
+section.judul h2{
+    margin: 5px;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+section.judul p{
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 5px;
+    margin: 5px;
+    text-indent: 2%
+    font-size: 12pt;
+
+}
+
+section.judul a{
+    color: salmon;
+}
+
+
+    /*Isi Artikel-Section*/
+article section.isi h3{
+    font-size: 16pt;
+    font-weight: bold; 
+    margin: 8px;   
+}
+
+article section.isi p{
+    margin: 5px;
+    line-height: 20px;
+    font-size: 13pt;
+    padding: 0 30px;
+}
+
+
+article section.isi i{
+ font: italic 14pt/1px calibri;
+ font-weight: bold;   
+}
+
+
+    /*Blok Kode*/
+pre{
+    margin: 10px;
+    font-family: monospace;
+    color: white;
+    border: 2px solid aqua;
+    overflow: auto;
+    max-width: 60%;
+    height: 80px;
+    border-top-left-radius: 24pt;
+    border-bottom-right-radius: 24pt;
+    background-color: #333;
+}
+
+code.syntax::selection, span::selection, pre::selection{
+    color: red;
+    background: yellow;
+}
+
+span.selector{
+    color: red;
+}
+
+span.property{
+    color: lightskyblue;
+}
+
+span.value{
+    color: orange;
+}
+
+div.whitebox{
+    margin: 10px;
+    border: 2px solid black;
+    max-width: 60%; 
+    /*border-top-left-radius: 24pt;*/
+    /*border-bottom-right-radius: 24pt;*/
+    border-radius: 24px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.output1 p{
+    letter-spacing: 10px;
+}
+
+.output2 p{
+    letter-spacing: -2px;
+}
+
+.output3 p{
+    word-spacing: 20px;
+}
+
+.output4 p{
+    word-spacing: -10px;
+}
+
+    /*Banner Gambar Akhir*/
+.Kano{
+    text-align: center;
+}
+
+    /*Bar Navigasi Bawah*/
+.navigasi a{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background: #e2e2e2;
+    border-radius: 12pt;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    padding: 30px;
+    font-size: 10pt;
+}
+
+.navigasi a.prev{
+    float: left;
+}
+
+.navigasi a.next{
+    float: right;
+}
+
+.navigasi a:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+
+    /*Biografi*/
+.biografi{
+    clear: both;
+    width: 70%;
+    margin: 30px auto;
+    background: #fefefe;
+    box-sizing: border-box;
+    font-size: 14pt;
+    border: 2px solid black;
+}
+
+.biografi h1{
+    font-size: 28pt;
+    margin: 20px auto;
+    font-weight: 700;
+    text-align: center;
+}
+
+.biografi h2{
+    font-size: 20pt;
+    font-weight: 400;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.biografi p{
+    margin: 10px;
+    text-align: justify;
+}
+
+.biografi .avatar{
+    text-align: center;
+}
+
+.biografi .avatar img{
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.biografi a{
+    color: black;
+    text-decoration: underline;
+}
+
+.biografi span[lang="jp"]{
+    font-weight: 600;
+}
+
+
+    /*Footer Web*/
+footer{
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    text-transform: capitalize;
+}
